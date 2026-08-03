@@ -1,0 +1,58 @@
+{
+  "id": "dev-rollingforresillience-scenes",
+  "title": "Dev-RollingForResillience-scenes",
+  "version": "1.3.0",
+  "manifest": "https://github.com/PenguinFlames/dev-rfr-s/releases/latest/download/module.json",
+  "download": "https://github.com/PenguinFlames/dev-rfr-s/releases/download/1.0.0/module.zip",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "description": "<p>Upgrade from dev0nerviostunnels-scenes</p><p></p><p>1.3.0 update</p><p>3 new maps (Inn, tavern, crypt)<br>notice: You'll need 'Multilevel Tokens by Beneos' for Inn/tavern to work properly</p>",
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "RfR-scenes",
+      "label": "Scenes",
+      "path": "packs/RfR-scenes",
+      "type": "Scene",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "RfR-macros",
+      "label": "Macros",
+      "path": "packs/RfR-macros",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "multilevel-tokens",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "action": "manageModule"
+}
